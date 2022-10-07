@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Automation Regression Suite">
+	<listeners>
+		<listener class-name="api.com.util.RetryListener"></listener>
+	</listeners>
+	<test name="API Test Cases">
+		<groups>
+			<run>
+				<exclude name=""></exclude>
+				<include name="SmokeSuite"></include>
+			</run>
+		</groups> <!-- Test case level -->
+		<classes>
+			<class name="api.com.tests.ApiTestScripts"/>
+			<class name="api.com.tests.PostMethodJson"/>
+		</classes> <!-- either use classes or packages -->
+		<!-- 
+		<packages>
+			<package name="api.com.tests"/>
+		</packages> 
+		-->
+	</test>
+</suite>

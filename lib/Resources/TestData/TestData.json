@@ -1,0 +1,6 @@
+{
+	"uriGetUsers":"https://reqres.in/api/users?page=2",
+	"ExpectedEmail":"lindsay.ferguson@reqres.in",
+	"endpointGetUsers":"/api/users",
+	"encodingType":"UTF-8"
+}
